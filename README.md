@@ -11,28 +11,36 @@ X unshaped ringdown G-code
 Y unshaped ringdown G-code with the bed heater explicitly disabled
 AI analysis prompt templates
 Hardware links
+
 KUSBA Amazon listing used in our experiment:
 https://a.co/d/045nkkEG
+
 Official KUSBA project:
 https://github.com/xbst/KUSBA
+
 M6 nozzle mount:
 https://github.com/xbst/KUSBA/blob/main/Mounts/M6_KUSBA_Mount.stl
+
 KUSBA documentation:
 https://docs.isiks.tech/
+
 The official M6 mount is intended for KUSBA v2.3/v2.4 and calls for an M6 x 10 mm
 SHCS/BHCS after removing the nozzle. In our MINI setup the mount hung below the normal
 nozzle height, so we ALWAYS homed before installing the nozzle-mounted sensor.
+
 IMPORTANT firmware compatibility note
 The included PlatformIO project is the exact build that worked on our KUSBA with the
 ISSI flash chip. Rampon documentation notes that some KUSBA batches use an ISSI
 IS25LP016D instead of the Winbond flash. The ISSI chip can be identified by a white
 dot/marking on the large 8-pin flash chip.
+
 This project uses:
 boot2_is25lp080_4_padded_checksum.S
 Do not assume that boot2 is correct for every KUSBA revision/flash chip.
 If your KUSBA is not the white-dot ISSI variant, use the source as a reference and adapt
 the flash boot2 appropriately rather than blindly flashing it.
 Windows setup
+
 Install:
 Python 3
 Git for Windows
